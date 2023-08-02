@@ -60,4 +60,16 @@ System.out.println("На улице " + temperature + " градуса, нужн
   if (canRideTheRidesAlone) {
     System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
   }
+
+  int numberOfPassengers = 102;
+  int capacity = 102;
+  int seatingPlaces = 60;
+  if (numberOfPassengers < seatingPlaces) {
+    System.out.println("Ввагоне есть сидячие места");
+  }
+  if (numberOfPassengers >= seatingPlaces && numberOfPassengers < capacity) {
+    System.out.println("В вагоне осталить только стоячие места");
+  }else{
+    System.out.println("Вагон уже полностью забит");
+  }
   }}

@@ -23,27 +23,22 @@ System.out.println("На улице " + temperature + " градуса, нужн
 
   int age1 = 60;
   boolean haveToGoToSleep = age1 < 2;
+  boolean haveToGoToKindergarden = age1 >=2 && age1 <=6;
+  boolean haveToGoToSchool = age1 >= 7 && age1 <= 18;
+  boolean haveToGoToUniversity = age1 > 18 && age1 < 24;
+  boolean haveToGoToWork = age1 >= 24 && age1 < 60;
+  boolean haveToHaveAReast = age1 >= 60;
   if (haveToGoToSleep) {
     System.out.println("Если возраст человека равен " + age1 + ", то ему пора спать");
-  }
-  boolean haveToGoToKindergarden = age1 >=2 && age1 <=6;
-  if (haveToGoToKindergarden) {
+  } else if (haveToGoToKindergarden) {
     System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в детский сад");
-  }
-  boolean haveToGoToSchool = age1 >= 7 && age1 <= 18;
-  if (haveToGoToSchool) {
+  } else if (haveToGoToSchool) {
     System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в школу");
-  }
-  boolean haveToGoToUniversity = age1 > 18 && age1 < 24;
-  if (haveToGoToUniversity) {
+  } else if (haveToGoToUniversity) {
     System.out.println("Если возраст человека равен " + age1 + ", то его место в университете");
-  }
-  boolean haveToGoToWork = age1 >= 24 && age1 < 60;
-  if (haveToGoToWork) {
+  } else if (haveToGoToWork) {
     System.out.println("Если возраст человека равен " + age1 + ", то ему пора ходить на работу");
-  }
-  boolean haveToHaveAReast = age1 >= 60;
-  if (haveToHaveAReast) {
+  } else if (haveToHaveAReast) {
     System.out.println("Если возраст человека равен " + age1 + ", то он может отдохнуть");
   }
 
@@ -53,11 +48,9 @@ System.out.println("На улице " + temperature + " градуса, нужн
   boolean canRideTheRidesAlone = age2 >= 14;
   if (cantRideTheRides) {
     System.out.println("Если возраст ребенка равен " + age2 + ", то ему нельзя кататься на аттракционе");
-  }
-  if (canRideTheRides) {
+  } else if (canRideTheRides) {
     System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе в сопровождении взрослого");
-  }
-  if (canRideTheRidesAlone) {
+  } else if (canRideTheRidesAlone) {
     System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
   }
 
@@ -66,10 +59,9 @@ System.out.println("На улице " + temperature + " градуса, нужн
   int seatingPlaces = 60;
   if (numberOfPassengers < seatingPlaces) {
     System.out.println("Ввагоне есть сидячие места");
-  }
-  if (numberOfPassengers >= seatingPlaces && numberOfPassengers < capacity) {
+  } else if (numberOfPassengers >= seatingPlaces && numberOfPassengers < capacity) {
     System.out.println("В вагоне осталить только стоячие места");
-  }else{
+  } else {
     System.out.println("Вагон уже полностью забит");
   }
 
@@ -78,8 +70,7 @@ System.out.println("На улице " + temperature + " градуса, нужн
   int three = 3;
   if (one > two && one > three) {
     System.out.println("Первое число наибольшее");
-  }
-  if (two > one && two > three) {
+  } else if (two > one && two > three) {
     System.out.println("Второе число наибольшее");
   } else {
     System.out.println("Третье число наибольшее");

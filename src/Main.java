@@ -20,4 +20,30 @@ System.out.println("На улице " + temperature + " градуса, нужн
   } else {
     System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
   }
+
+  int age1 = 60;
+  boolean haveToGoToSleep = age1 < 2;
+  if (haveToGoToSleep) {
+    System.out.println("Если возраст человека равен " + age1 + ", то ему пора спать");
+  }
+  boolean haveToGoToKindergarden = age1 >=2 && age1 <=6;
+  if (haveToGoToKindergarden) {
+    System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в детский сад");
+  }
+  boolean haveToGoToSchool = age1 >= 7 && age1 <= 18;
+  if (haveToGoToSchool) {
+    System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в школу");
+  }
+  boolean haveToGoToUniversity = age1 > 18 && age1 < 24;
+  if (haveToGoToUniversity) {
+    System.out.println("Если возраст человека равен " + age1 + ", то его место в университете");
+  }
+  boolean haveToGoToWork = age1 >= 24 && age1 < 60;
+  if (haveToGoToWork) {
+    System.out.println("Если возраст человека равен " + age1 + ", то ему пора ходить на работу");
+  }
+  boolean haveToHaveAReast = age1 >= 60;
+  if (haveToHaveAReast) {
+    System.out.println("Если возраст человека равен " + age1 + ", то он может отдохнуть");
+  }
   }}

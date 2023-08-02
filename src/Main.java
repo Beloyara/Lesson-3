@@ -72,4 +72,16 @@ System.out.println("На улице " + temperature + " градуса, нужн
   }else{
     System.out.println("Вагон уже полностью забит");
   }
+
+  int one = 1;
+  int two = 2;
+  int three = 3;
+  if (one > two && one > three) {
+    System.out.println("Первое число наибольшее");
+  }
+  if (two > one && two > three) {
+    System.out.println("Второе число наибольшее");
+  } else {
+    System.out.println("Третье число наибольшее");
+  }
   }}

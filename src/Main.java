@@ -46,4 +46,18 @@ System.out.println("На улице " + temperature + " градуса, нужн
   if (haveToHaveAReast) {
     System.out.println("Если возраст человека равен " + age1 + ", то он может отдохнуть");
   }
+
+  int age2 = 14;
+  boolean cantRideTheRides = age2 < 5;
+  boolean canRideTheRides = age2 >= 5 && age2 < 14;
+  boolean canRideTheRidesAlone = age2 >= 14;
+  if (cantRideTheRides) {
+    System.out.println("Если возраст ребенка равен " + age2 + ", то ему нельзя кататься на аттракционе");
+  }
+  if (canRideTheRides) {
+    System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+  }
+  if (canRideTheRidesAlone) {
+    System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
+  }
   }}
